@@ -29,12 +29,12 @@ Haga un programa que utilice una función para calcular el valor de un préstamo
 -La función reduce() en Python se utiliza para aplicar una operación acumulativa a los elementos de un iterable (como una lista o tupla) de manera secuencial, reduciéndolos a un único valor
 
 Sintaxis:
-´´´python
+```python
 lambda argumentos: expresión
 
 reduce(función, iterable, [valor_inicial])
-´´´
-´´´python
+```
+```python
 from functools import reduce
 
 suma = lambda x, y: x + y
@@ -43,7 +43,7 @@ print(suma(3, 4))  # Imprime 7
 mi_lista = [5, 6, 7, 8, 9]
 p_multiplicativo=reduce(lambda x, y: x * y, mi_lista) # "mi_lista" sera el valor iterable y "valor_inicial" sera el primer valor de esa lista
 print(p_multiplicativo)
-´´´
+```
 Explicación proceso "reduce":
 
 * En la primera iteración, lambda x, y: x * y se aplica a los primeros dos números de la lista: 5 y 6. El resultado es 30.
