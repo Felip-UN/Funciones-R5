@@ -2,8 +2,9 @@
 A continuacion se veran los 6 codigos pedidos en el reto
 
 
-### 1.Dado la figura de la imagen, desarrolle:
+### 1.Dado la figura de la imagen
 ![68747470733a2f2f692e706f7374696d672e63632f465276436d7078782f696d6167652e706e67](https://github.com/user-attachments/assets/da9e14ba-e715-4c77-834b-413466c17180)
+### Desarrolle:
 - Una función matemática para calcular el volumen y el área superficial.
 - Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
 - Revise como utilizar el valor de pi usando import math y math.pi
@@ -32,8 +33,9 @@ if __name__=="__main__":
     print(vol1)
     print(vol2)
 ```
-### 2.Dado la figura de la imagen, desarrolle:
+### 2.Dado la figura de la imagen
 ![68747470733a2f2f692e706f7374696d672e63632f3174344d727a734c2f696d6167652e706e67](https://github.com/user-attachments/assets/2afc883c-f38f-408a-b4d8-8d9ab78888db)
+### Desarrolle:
 - Una función matemática para calcular el área y el perimetro.
 - Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r, a y b.
 - Revise como utilizar el valor de pi usando import math y math.pi
