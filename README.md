@@ -7,6 +7,30 @@ A continuacion se veran los 6 codigos pedidos en el reto
 - Una función matemática para calcular el volumen y el área superficial.
 - Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
 - Revise como utilizar el valor de pi usando import math y math.pi
+```python
+import math #biblioteca de la que se sacara pi
+pi=math.pi #Constante pi
+
+def volumen_esfera(r):
+  voles = (4/3)*pi*r**3 #formula volumen de la esfera: V=(4/3)*pi*r**3
+  return voles
+
+def volumen_cono(r,h):
+  volco=pi*r**2*h/3 # formula volumen del cono: pi*r**2*h/3
+  return volco
+if __name__=="__main__":
+  r1=float(input("Ingresa un valor para el radio de la esfera: "))
+  r2=float(input("Ingresa un valor para el radio de la base del cono: "))
+  h=float(input("Ingresa un valor para la altura del cono: "))
+  vol1=volumen_esfera(r1) #ejecuta la funcion definida para allar el volumen de la esfera
+  vol2=volumen_cono(r2,h) #ejecuta la funcion definida para allar el volumen del cono
+  
+  print("\nEl volumen de la figura completa con tus paramentros es:",vol1+vol2)
+  son=input("\nQuieres saber el valor individual de la esfera y el cono respectivamente? (y/n) ")
+  if son == "y":
+    print(vol1)
+    print(vol2)
+```
 ### 2.Dado la figura de la imagen, desarrolle:
 ![68747470733a2f2f692e706f7374696d672e63632f3174344d727a734c2f696d6167652e706e67](https://github.com/user-attachments/assets/2afc883c-f38f-408a-b4d8-8d9ab78888db)
 - Una función matemática para calcular el área y el perimetro.
