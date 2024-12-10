@@ -7,6 +7,7 @@ A continuacion se veran los 6 codigos pedidos en el reto
 - Una función matemática para calcular el volumen y el área superficial.
 - Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
 - Revise como utilizar el valor de pi usando import math y math.pi
+#### Programa
 ```python
 import math #biblioteca de la que se sacara pi
 pi=math.pi #Constante pi
@@ -36,6 +37,30 @@ if __name__=="__main__":
 - Una función matemática para calcular el área y el perimetro.
 - Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r, a y b.
 - Revise como utilizar el valor de pi usando import math y math.pi
+#### Programa
+```python
+import math #biblioteca de la que se sacara pi
+pi=math.pi #Constante pi
+
+def area_figura(a,b,r):
+  a_rec=a*b #formula area de un rectangulo
+  a_es=pi*r**2 #formula area de un circulo
+  area_fideo=a_rec + 2*a_es #son 2 circulos
+  return area_fideo
+def perimetro_figura(a,b,r):
+  p_rec=2*a*2*b #formula perimetro de un rectangulo
+  p_es= 2*pi*r #formula perimetro de un circulo
+  pera= p_rec + 2*p_es 
+  return pera
+if __name__=="__main__":
+  r=float(input("Ingresa un valor para el radio de los circulos: "))
+  a=float(input("\nIngresa un valor para la altura del rectangulo: "))
+  b=float(input("\nIngresa un valor para el ancho del triangulo: ")) #preferiblemente mayor que la altura
+  area= area_figura(b,a,r)
+  perimetro= perimetro_figura(b,a,r)
+  print("\nEl area de la figura es ", area)
+  print("El perimetro de la figura es ", perimetro)
+```
 ### 3.Diseñar
 Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
 ### 4.Evación de impuestos (Nah mentira, solo impuestos :c)
@@ -46,7 +71,10 @@ Haga un programa que utilice una función para calcular el valor de un préstamo
 - El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
 - La potencia del mayor número elevado al menor número
 - La raíz cúbica del menor número
-
+#### Programa
+```python
+print("Codigo adjuntado en archivos como programa y notebook")
+```
 ## Explicacion de "reduce" y "lambda" del programa del punto 5 (Extra)
 -El lambda en Python es una forma de crear funciones anónimas o funciones pequeñas de manera concisa. En lugar de definir una función con def, se puede usar lambda para crear una función en una sola línea.
 
@@ -58,6 +86,7 @@ lambda argumentos: expresión
 
 reduce(función, iterable, [valor_inicial])
 ```
+Ejemplo practico:
 ```python
 from functools import reduce
 
