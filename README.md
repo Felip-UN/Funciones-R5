@@ -65,6 +65,27 @@ if __name__=="__main__":
 ```
 ### 3.Diseñar
 Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
+#### Función
+```python
+def kg_totales(n,m,k):
+  kg_t=  n*kg_gallinas + m*kg_gallos + k*kg_pollitos
+  return kg_t
+```
+#### Programa 
+```python
+kg_gallinas=6
+kg_gallos=7
+kg_pollitos=1
+def kg_totales(n,m,k):
+  kg_t=  n*kg_gallinas + m*kg_gallos + k*kg_pollitos
+  return kg_t
+n, m, k= map(int, input("cuantas gallinas gallos y pollitos tiene usted? \ningrese los valores separados con un espacio: ").split())
+total_carne=kg_totales(n,m,k)
+print("La cantidad total de carne en kilogramos de sus aves es", total_carne,"kg")
+```
+n, m, k= map(int, input("cuantas gallinas gallos y pollitos tiene usted? \ningrese los valores separados con un espacio: ").split())
+kg_totales= n*kg_gallinas + m*kg_gallos + k*kg_pollitos
+print("La cantidad total de carne en kilogramos de sus aves es", kg_totales,"kg")
 ### 4.Evación de impuestos (Nah mentira, solo impuestos :c)
 Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
 ### 5.Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
